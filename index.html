@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grambzaar AI | Smart Rural India</title>
+<style>
+:root {
+  --green: #174b32;
+  --lime: #d8f5a5;
+  --cream: #f7f8f0;
+  --text: #193728;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--text);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: white;
+  gap: 20px;
+}
+.logo { font-size: 23px; font-weight: 800; }
+.logo span { color: #438454; }
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 20px;
+}
+button, .btn {
+  border: 0;
+  border-radius: 9px;
+  padding: 13px 18px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+.primary { background: var(--lime); color: var(--green); }
+.dark { background: var(--green); color: white; }
+.hero {
+  background: var(--green);
+  color: white;
+  padding: 85px 7%;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.eyebrow {
+  color: var(--lime);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+h1 { font-size: clamp(38px, 5vw, 65px); line-height: 1.08; }
+.hero p { line-height: 1.8; color: #e0ebe2; }
+.hero-art {
+  min-height: 290px;
+  border-radius: 24px;
+  background: linear-gradient(160deg, #c8e99a, #67995b 55%, #244e34);
+  display: grid;
+  place-items: center;
+  font-size: 100px;
+}
+section { padding: 65px 7%; }
+.section-title { text-align: center; margin-bottom: 35px; }
+.section-title h2 { font-size: 34px; margin-bottom: 10px; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e6eadf;
+}
+.card .emoji { font-size: 38px; }
+.card p { color: #647367; line-height: 1.6; }
+.price { font-size: 23px; font-weight: bold; }
+.ai-section {
+  background: #e9f1df;
+  border-radius: 20px;
+  max-width: 850px;
+  margin: auto;
+  padding: 30px;
+}
+.chat-box {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 100px;
+  margin: 15px 0;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.chat-form { display: flex; gap: 10px; }
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #ccd8c9;
+  border-radius: 9px;
+  font-size: 15px;
+}
+footer {
+  background: #123b29;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+@media(max-width: 700px) {
+  nav { padding: 16px 5%; }
+  nav a { display: none; }
+  .hero { grid-template-columns: 1fr; padding: 55px 6%; }
+  .grid { grid-template-columns: 1fr; }
+  section { padding: 45px 6%; }
+  .hero-art { min-height: 220px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">🌱 Grambzaar<span> AI</span></div>
+  <div>
+    <a href="#home">Home</a>
+    <a href="#market">Marketplace</a>
+    <a href="#ai">AI Assistant</a>
+  </div>
+  <a class="btn dark" href="#market">Explore</a>
+</nav>
+
+<header class="hero" id="home">
+  <div>
+    <div class="eyebrow">SMART RURAL INDIA · BUILT BY ADITYA SINGH</div>
+    <h1>Gaon ka bazaar,<br>ab AI ke saath.</h1>
+    <p>
+      Empowering farmers, connecting rural businesses,
+      and making technology accessible to every village.
+      A smarter future starts here.
+    </p>
+    <a class="btn primary" href="#market">Explore Marketplace →</a>
+    <a class="btn" style="color:white;border:1px solid #75947e"
+       href="#ai">Try AI Assistant</a>
+  </div>
+  <div class="hero-art" aria-label="Agriculture illustration">🌾🚜</div>
+</header>
+
+<section>
+  <div class="section-title">
+    <h2>One platform, many possibilities</h2>
+    <p>Digital solutions for a stronger rural economy.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🌾</div>
+      <h3>For Farmers</h3>
+      <p>Discover agricultural products and access helpful farming information.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🛍️</div>
+      <h3>Village Marketplace</h3>
+      <p>Explore products and connect rural sellers with customers.</p>
+    </div>
+    <div class="card">
+      <div class="emoji">🤖</div>
+      <h3>AI Assistant</h3>
+      <p>Get instant demo answers to common questions about rural business.</p>
+    </div>
+  </div>
+</section>
+
+<section id="market">
+  <div class="section-title">
+    <h2>Explore the Marketplace</h2>
+    <p>Sample products — replace these with real seller listings.</p>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="emoji">🌾</div>
+      <h3>Wheat</h3>
+      <p>Sample agricultural listing</p>
+      <div class="price">₹30 / kg</div>
+      <button class="dark" onclick="buy('Wheat')">Enquire Now</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🥜</div>
+      <h3>Groundnuts</h3>
+      <p>Sample farm product listing</p>
+      <div class="price">₹80 / kg</div>
+      <button class="dark" onclick="buy('Groundnuts')">Enquire Now</button>
+    </div>
+    <div class="card">
+      <div class="emoji">🍯</div>
+      <h3>Village Honey</h3>
+      <p>Sample local product listing</p>
+      <div class="price">₹250 / jar</div>
+      <button class="dark" onclick="buy('Village Honey')">Enquire Now</button>
+    </div>
+  </div>
+</section>
+
+<section id="ai">
+  <div class="ai-section">
+    <div class="eyebrow" style="color:#438454">GRAMBZAAR INTELLIGENCE</div>
+    <h2>Ask Grambzaar AI 🤖</h2>
+    <p>Ask about farming, village business or our marketplace.</p>
+    <div class="chat-box" id="chat" aria-live="polite">
+      <strong>Grambzaar AI:</strong> Namaste! Main Grambzaar AI ka demo
+      assistant hoon. Aap kya jaanna chahte hain?
+    </div>
+    <form class="chat-form" id="chatForm">
+      <input id="question" placeholder="Apna sawal likhein..."
+             aria-label="Ask a question" required>
+      <button class="dark" type="submit">Ask</button>
+    </form>
+    <p style="font-size:12px">
+      Demo version: answers are predefined, not generated by a real AI model.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <h3>🌱 Grambzaar AI</h3>
+  <p>Smart Rural Commerce for a Better Tomorrow.</p>
+  <p>Founded by Aditya Singh</p>
+  <small>© <span id="year"></span> Grambzaar AI. All rights reserved.</small>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+function buy(product) {
+  alert("You selected " + product +
+        ". Real orders require a connected backend.");
+}
+
+document.getElementById("chatForm").addEventListener("submit",
+  function(event) {
+    event.preventDefault();
+
+    const input = document.getElementById("question");
+    const chat = document.getElementById("chat");
+    const q = input.value.trim().toLowerCase();
+
+    let answer;
+
+    if (q.includes("namaste") || q.includes("hello") ||
+        q.includes("hi")) {
+      answer = "Namaste! Welcome to Grambzaar AI. How can I help you?";
+    } else if (q.includes("fasal") || q.includes("crop") ||
+               q.includes("farming") || q.includes("kheti")) {
+      answer = "Apni fasal, location aur problem batayein. Yeh demo hai; sahi salah ke liye local agricultural expert se bhi sampark karein.";
+    } else if (q.includes("price") || q.includes("rate") ||
+               q.includes("bhav") || q.includes("mandi")) {
+      answer = "Yeh demo live mandi prices nahi dikhata. Apni fasal aur mandi ka naam batayein; live prices ke liye verified data service jodni hogi.";
+    } else if (q.includes("business") || q.includes("dukan")) {
+      answer = "Aap local products list karke rural business shuru kar sakte hain. Real selling ke liye seller registration aur order system banana hoga.";
+    } else {
+      answer = "Shukriya! Yeh Grambzaar AI ka demo assistant hai. Real AI answers ke liye AI API aur secure backend connect karna hoga.";
+    }
+
+    chat.replaceChildren();
+
+    const userLine = document.createElement("p");
+    const userLabel = document.createElement("strong");
+    userLabel.textContent = "You: ";
+    userLine.append(userLabel, document.createTextNode(input.value));
+
+    const botLine = document.createElement("p");
+    const botLabel = document.createElement("strong");
+    botLabel.textContent = "Grambzaar AI: ";
+    botLine.append(botLabel, document.createTextNode(answer));
+
+    chat.append(userLine, botLine);
+    input.value = "";
+  }
+);
+</script>
+
+</body>
+</html>
